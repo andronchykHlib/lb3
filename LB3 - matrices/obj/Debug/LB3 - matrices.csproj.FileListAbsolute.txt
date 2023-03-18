@@ -1,0 +1,7 @@
+D:\univ\ПАЛМ\LB3 - matrices\LB3 - matrices\bin\Debug\LB3___matrices.exe
+D:\univ\ПАЛМ\LB3 - matrices\LB3 - matrices\bin\Debug\LB3___matrices.pdb
+D:\univ\ПАЛМ\LB3 - matrices\LB3 - matrices\obj\Debug\LB3 - matrices.csproj.AssemblyReference.cache
+D:\univ\ПАЛМ\LB3 - matrices\LB3 - matrices\obj\Debug\LB3 - matrices.csproj.SuggestedBindingRedirects.cache
+D:\univ\ПАЛМ\LB3 - matrices\LB3 - matrices\obj\Debug\LB3 - matrices.csproj.CoreCompileInputs.cache
+D:\univ\ПАЛМ\LB3 - matrices\LB3 - matrices\obj\Debug\LB3___matrices.exe
+D:\univ\ПАЛМ\LB3 - matrices\LB3 - matrices\obj\Debug\LB3___matrices.pdb
