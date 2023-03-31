@@ -18,39 +18,7 @@ namespace LB3___matrices
             
             return result;
         }
-
-        public void IncSort(int[] colArray)
-        {
-            for (int i = 0; i < colArray.Length - 1; i++)
-            {
-                for (int j = 0; j < colArray.Length - i - 1; j++)
-                {
-                    if (colArray[j] > colArray[j + 1])
-                    {
-                        int temp = colArray[j];
-                        colArray[j] = colArray[j + 1];
-                        colArray[j + 1] = temp;
-                    }
-                }
-            }
-        }
-
-        public void DecSort(int[] colArray)
-        {
-            for (int i = 0; i < colArray.Length - 1; i++)
-            {
-                for (int j = 0; j < colArray.Length - i - 1; j++)
-                {
-                    if (colArray[j] < colArray[j + 1])
-                    {
-                        int temp = colArray[j];
-                        colArray[j] = colArray[j + 1];
-                        colArray[j + 1] = temp;
-                    }
-                }
-            }
-        }
-
+        
         public void SetColumn(int[,] array, int[] colArray, int currentColumnIndex)
         {
             int row = 0;
