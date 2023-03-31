@@ -7,7 +7,7 @@ namespace LB3___matrices
         private readonly ArrayFiller _af = new ArrayFiller();
         private const string SuccessMessage = "Found sum and elements of negative integers under main diagonal: ";
 
-        public string Task()
+        public void Task()
         {
             int[,] array = _af.BuildArray();
             int sum = 0;
@@ -24,7 +24,7 @@ namespace LB3___matrices
                 }
             }
 
-            return $"{SuccessMessage}\nsum is {sum}\ncount is {count}";
+            Console.WriteLine($"{SuccessMessage}\nsum is {sum}\ncount is {count}");
         }
     }
 }
