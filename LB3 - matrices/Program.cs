@@ -6,7 +6,7 @@ namespace LB3___matrices
     {
         private static readonly FirstBlock _firstBlock = new FirstBlock();
         private static readonly SecondBlock _secondBlock = new SecondBlock();
-        private static readonly ThirdBlock _thirdBlock = new ThirdBlock();
+        private static readonly FourthBlock _fourthBlock = new FourthBlock();
 
         public static void Main(string[] args)
         {
@@ -28,10 +28,10 @@ namespace LB3___matrices
                         return;
                     case 3:
                         Console.WriteLine("Third block...");
-                        _thirdBlock.Task();
                         return;
                     case 4:
-                        Console.WriteLine("Fourth block");
+                        Console.WriteLine("Fourth block...");
+                        _fourthBlock.Task();
                         return;
                     case 0:
                         Console.WriteLine("Exiting program...");
