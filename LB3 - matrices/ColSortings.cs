@@ -19,7 +19,7 @@ namespace LB3___matrices
             return result;
         }
 
-        public void IncSort(ref int[] colArray)
+        public void IncSort(int[] colArray)
         {
             for (int i = 0; i < colArray.Length - 1; i++)
             {
@@ -35,7 +35,7 @@ namespace LB3___matrices
             }
         }
 
-        public void DecSort(ref int[] colArray)
+        public void DecSort(int[] colArray)
         {
             for (int i = 0; i < colArray.Length - 1; i++)
             {
@@ -51,7 +51,7 @@ namespace LB3___matrices
             }
         }
 
-        public void SetSortedColumn(ref int[,] array, int[] colArray, int currentColumnIndex)
+        public void SetColumn(int[,] array, int[] colArray, int currentColumnIndex)
         {
             int row = 0;
             for (int i = 0; i < colArray.Length; i++)
