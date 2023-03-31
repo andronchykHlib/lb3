@@ -8,14 +8,13 @@ namespace LB3___matrices
     {
         private readonly ArrayFiller _af = new ArrayFiller();
         private readonly ColSortings _cs = new ColSortings();
-        
+        private readonly Dictionary<int[], int> _compositionsData = new Dictionary<int[], int>();
+
         public void Task()
         { 
             int[,] array = _af.BuildArray();
-            Dictionary<int[], int> compositionsData = new Dictionary<int[], int>();
-
-            MakeCompositionsDictionary(array, compositionsData);
-            var sortedCompositionsByValue = compositionsData.OrderBy(item => item.Value);
+            MakeCompositionsDictionary(array, _compositionsData);
+            var sortedCompositionsByValue = _compositionsData.OrderBy(item => item.Value);
             SetSortedColumns(array, sortedCompositionsByValue);
 
             _af.LogArray(array);
@@ -27,7 +26,8 @@ namespace LB3___matrices
             for (int column = 0; column < array.GetLength(0); column++)
             {
                 int[] colArray = _cs.BuildColArray(array, column);
-                CalcComposition(colArray, dictionary, column);
+                int comp = CalcComposition(colArray);
+                _compositionsData.Add(colArray, comp);
             }
         }
 
@@ -40,11 +40,11 @@ namespace LB3___matrices
             }
         }
 
-        private void CalcComposition(int[] array, Dictionary<int[],int> compositions, int columnIndex)
+        private int CalcComposition(int[] array)
         {
             int comp = 1;
             Array.ForEach(array, i => comp *= i);
-            compositions.Add(array, comp);
+            return comp;
         }
     }
 }
