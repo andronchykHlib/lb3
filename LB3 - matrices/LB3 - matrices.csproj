@@ -46,6 +46,7 @@
         <Compile Include="TaskBlocks\FirstBlock.cs" />
         <Compile Include="TaskBlocks\SecondBlock.cs" />
         <Compile Include="TaskBlocks\FourthBlock.cs" />
+        <Compile Include="TaskBlocks\ThirdBlock.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
