@@ -13,7 +13,7 @@ namespace LB3___matrices
         public void Task()
         { 
             int[,] array = _af.BuildArray();
-            MakeCompositionsDictionary(array, _compositionsData);
+            MakeCompositionsDictionary(array);
             var sortedCompositionsByValue = _compositionsData.OrderBy(item => item.Value);
             SetSortedColumns(array, sortedCompositionsByValue);
 
@@ -21,7 +21,7 @@ namespace LB3___matrices
             Console.WriteLine("Success. Sorted elements in given order");
         }
 
-        private void MakeCompositionsDictionary(int[,] array, Dictionary<int[], int> dictionary)
+        private void MakeCompositionsDictionary(int[,] array)
         {
             for (int column = 0; column < array.GetLength(0); column++)
             {
